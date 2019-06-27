@@ -1,8 +1,5 @@
 //
-//  DelegateController.swift (GREEN)
-//  delegatePlay
-//
-//  Created by Brian Bansenauer
+//  Lesson: Delegate_Play
 //
 
 import UIKit

@@ -1,9 +1,5 @@
 //
-//  childViewController.swift
-//  delegatePlay
-//
-//  Created by Brian Bansenauer on 5/18/15.
-//  Copyright (c) 2015 Cascadia College. All rights reserved.
+//  Lesson: Delegate_Play
 //
 
 import Foundation
