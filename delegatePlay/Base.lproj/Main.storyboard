@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2aA-b7-esV">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2aA-b7-esV">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.15"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,51 +19,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift Delegates Are" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXm-Yy-Ikm">
-                                <rect key="frame" x="94" y="220" width="187" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="......." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwX-oU-XCT">
-                                <rect key="frame" x="171" y="267" width="33" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XqK-DE-3V0">
-                                <rect key="frame" x="123" y="316.5" width="129" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="On to Delegator">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="hHv-Lj-vnI" kind="show" id="Jot-fH-LR9"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Jeb-zC-HbV">
+                                <rect key="frame" x="66" y="144" width="243" height="129"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift Delegates Are" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXm-Yy-Ikm">
+                                        <rect key="frame" x="28.5" y="0.0" width="186.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="......." lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwX-oU-XCT">
+                                        <rect key="frame" x="105" y="50.5" width="33" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XqK-DE-3V0">
+                                        <rect key="frame" x="57" y="95" width="129" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="On to Delegator">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="hHv-Lj-vnI" kind="show" id="Jot-fH-LR9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="XqK-DE-3V0" firstAttribute="centerX" secondItem="Jeb-zC-HbV" secondAttribute="centerX" id="0gR-92-tB5"/>
+                                    <constraint firstItem="oXm-Yy-Ikm" firstAttribute="top" secondItem="Jeb-zC-HbV" secondAttribute="top" id="CPJ-kc-pic"/>
+                                    <constraint firstAttribute="bottom" secondItem="XqK-DE-3V0" secondAttribute="bottom" id="DKF-yJ-5wY"/>
+                                    <constraint firstItem="DwX-oU-XCT" firstAttribute="top" secondItem="oXm-Yy-Ikm" secondAttribute="bottom" constant="24" id="asC-5g-avs"/>
+                                    <constraint firstItem="XqK-DE-3V0" firstAttribute="top" secondItem="DwX-oU-XCT" secondAttribute="bottom" constant="24" id="b7W-A4-4fD"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.61229804421768708" green="0.73224914965986398" blue="0.093989158163265307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="XqK-DE-3V0" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="4qr-dj-ImN"/>
-                            <constraint firstItem="DwX-oU-XCT" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="5zl-xa-bf5"/>
-                            <constraint firstItem="XqK-DE-3V0" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Dme-Qg-b0W"/>
-                            <constraint firstItem="DwX-oU-XCT" firstAttribute="top" secondItem="oXm-Yy-Ikm" secondAttribute="bottom" constant="20" id="N4y-7h-46e"/>
-                            <constraint firstItem="oXm-Yy-Ikm" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="uut-8e-ZGk"/>
-                            <constraint firstItem="oXm-Yy-Ikm" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-100" id="zep-JB-1sn"/>
+                            <constraint firstItem="Jeb-zC-HbV" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="Drw-08-VGF"/>
+                            <constraint firstItem="Jeb-zC-HbV" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ItR-eg-Sx3"/>
+                            <constraint firstItem="Jeb-zC-HbV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="50" id="Kh0-Cq-4uy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jeb-zC-HbV" secondAttribute="trailing" constant="50" id="VY2-yL-YlA"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="DwX-oU-XCT"/>
-                                <exclude reference="XqK-DE-3V0"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="DwX-oU-XCT"/>
-                                <include reference="XqK-DE-3V0"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="yNs-pL-ZZy"/>
                     <connections>
@@ -88,54 +84,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWC-yV-oQ3">
-                                <rect key="frame" x="193" y="228.5" width="125" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="9gd-Iq-KJM">
+                                <rect key="frame" x="56.5" y="274" width="262" height="119"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sRI-iW-u53">
+                                        <rect key="frame" x="0.0" y="0.0" width="262" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delegates Are: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLa-7v-98Y">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="YSA-Ye-ti6"/>
+                                                    <constraint firstAttribute="width" constant="117" id="bA0-KC-k0B"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWC-yV-oQ3">
+                                                <rect key="frame" x="137" y="0.0" width="125" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="kCJ-Es-s7A"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="HLa-7v-98Y" firstAttribute="top" secondItem="sRI-iW-u53" secondAttribute="top" id="37D-YU-iLS"/>
+                                            <constraint firstItem="HLa-7v-98Y" firstAttribute="leading" secondItem="sRI-iW-u53" secondAttribute="leading" id="O9i-GA-D41"/>
+                                            <constraint firstAttribute="trailing" secondItem="QWC-yV-oQ3" secondAttribute="trailing" id="gf2-YC-ebd"/>
+                                            <constraint firstItem="QWC-yV-oQ3" firstAttribute="top" secondItem="sRI-iW-u53" secondAttribute="top" id="wIx-M5-ykk"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqO-Qu-trX">
+                                        <rect key="frame" x="63" y="81" width="136" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="Cuc-yd-UKI"/>
+                                            <constraint firstAttribute="width" constant="136" id="bZR-5t-4ne"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Delegate Away">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goButtonPressed" destination="hHv-Lj-vnI" eventType="touchUpInside" id="51t-mm-nhk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="125" id="kCJ-Es-s7A"/>
+                                    <constraint firstItem="sRI-iW-u53" firstAttribute="top" secondItem="9gd-Iq-KJM" secondAttribute="top" id="Vah-RL-9e0"/>
+                                    <constraint firstAttribute="bottom" secondItem="FqO-Qu-trX" secondAttribute="bottom" id="W29-WT-dm1"/>
+                                    <constraint firstItem="FqO-Qu-trX" firstAttribute="centerX" secondItem="9gd-Iq-KJM" secondAttribute="centerX" id="n76-4Z-GSE"/>
+                                    <constraint firstItem="sRI-iW-u53" firstAttribute="centerX" secondItem="9gd-Iq-KJM" secondAttribute="centerX" id="wwo-5C-ITr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqO-Qu-trX">
-                                <rect key="frame" x="119.5" y="314.5" width="136" height="38"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Delegate Away">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="goButtonPressed" destination="hHv-Lj-vnI" eventType="touchUpInside" id="51t-mm-nhk"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delegates Are: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLa-7v-98Y">
-                                <rect key="frame" x="56" y="233" width="117" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.96617240646258506" blue="0.26538584183673469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="FqO-Qu-trX" firstAttribute="centerY" secondItem="wpI-WR-62S" secondAttribute="centerY" id="5vz-Ju-WKU"/>
-                            <constraint firstItem="HLa-7v-98Y" firstAttribute="leading" secondItem="wpI-WR-62S" secondAttribute="leading" constant="56" id="eVq-Wl-GXp"/>
-                            <constraint firstItem="QWC-yV-oQ3" firstAttribute="leading" secondItem="HLa-7v-98Y" secondAttribute="trailing" constant="20" id="jDI-jb-5vT"/>
-                            <constraint firstItem="FqO-Qu-trX" firstAttribute="centerX" secondItem="wpI-WR-62S" secondAttribute="centerX" id="klY-KW-EPD"/>
-                            <constraint firstItem="QWC-yV-oQ3" firstAttribute="centerY" secondItem="HLa-7v-98Y" secondAttribute="centerY" id="qbg-xH-QHi"/>
-                            <constraint firstItem="HLa-7v-98Y" firstAttribute="centerY" secondItem="wpI-WR-62S" secondAttribute="centerY" constant="-90" id="qfc-vb-DXE"/>
+                            <constraint firstItem="9gd-Iq-KJM" firstAttribute="centerX" secondItem="wpI-WR-62S" secondAttribute="centerX" id="PjX-RB-ULX"/>
+                            <constraint firstItem="9gd-Iq-KJM" firstAttribute="centerY" secondItem="wpI-WR-62S" secondAttribute="centerY" id="XU7-Ld-HX5"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="QWC-yV-oQ3"/>
-                                <exclude reference="FqO-Qu-trX"/>
-                                <exclude reference="HLa-7v-98Y"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="QWC-yV-oQ3"/>
-                                <include reference="FqO-Qu-trX"/>
-                                <include reference="HLa-7v-98Y"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="txtData" destination="QWC-yV-oQ3" id="wHv-YD-6Ln"/>
@@ -152,7 +160,7 @@
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="s48-mg-Y4P">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
